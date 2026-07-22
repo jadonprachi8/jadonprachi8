@@ -1,0 +1,109 @@
+/* Custom theme for Student Management System Swagger UI */
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    background: #f6f7fb;
+}
+
+/* ---------- Topbar ---------- */
+.swagger-ui .topbar {
+    background: linear-gradient(90deg, #1e293b 0%, #334155 100%);
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.swagger-ui .topbar .download-url-wrapper { display: none; }
+
+.swagger-ui .topbar::after {
+    content: "Student Management System API";
+    color: #f8fafc;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-left: 20px;
+}
+
+.swagger-ui .topbar .topbar-wrapper img { display: none; }
+
+/* ---------- Header / info block ---------- */
+.swagger-ui .info { margin: 30px 0; }
+
+.swagger-ui .info .title {
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.swagger-ui .info .title small.version-stamp { background: #2563eb; }
+
+.swagger-ui .scheme-container {
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+/* ---------- Operation blocks ---------- */
+.swagger-ui .opblock {
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+    border: none;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: box-shadow 0.15s ease;
+}
+
+.swagger-ui .opblock:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); }
+
+.swagger-ui .opblock .opblock-summary { border: none; padding: 8px 12px; }
+
+.swagger-ui .opblock .opblock-summary-method {
+    border-radius: 6px;
+    font-weight: 700;
+    min-width: 80px;
+    text-align: center;
+}
+
+.swagger-ui .opblock.opblock-post { background: rgba(73, 204, 144, 0.06); border-left: 5px solid #49cc90; }
+.swagger-ui .opblock.opblock-get { background: rgba(97, 175, 254, 0.06); border-left: 5px solid #61affe; }
+.swagger-ui .opblock.opblock-put { background: rgba(252, 161, 48, 0.06); border-left: 5px solid #fca130; }
+.swagger-ui .opblock.opblock-delete { background: rgba(249, 62, 62, 0.06); border-left: 5px solid #f93e3e; }
+
+/* ---------- Buttons ---------- */
+.swagger-ui .btn.authorize {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.swagger-ui .btn.authorize svg { fill: #fff; }
+
+.swagger-ui .btn.execute {
+    background: #2563eb;
+    border-color: #2563eb;
+    border-radius: 8px;
+}
+
+/* ---------- Section headers ---------- */
+.swagger-ui .opblock-tag {
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 22px;
+    color: #1e293b;
+}
+
+/* ---------- Models ---------- */
+.swagger-ui section.models {
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.swagger-ui section.models .model-container {
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 6px; }
+::-webkit-scrollbar-track { background: transparent; }

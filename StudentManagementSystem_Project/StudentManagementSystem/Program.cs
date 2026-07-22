@@ -104,10 +104,17 @@ var app = builder.Build();
 // ---------- Middleware pipeline ----------
 app.UseGlobalExceptionHandler();
 
+app.UseStaticFiles();
+
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "Student Management System API v1");
+    options.DocumentTitle = "Student Management System API";
+    options.InjectStylesheet("/swagger-ui/custom.css");
+    options.DefaultModelsExpandDepth(-1);
+    options.DocExpansion(Swashbuckle.AspNetCore.SwaggerUI.DocExpansion.None);
+    options.DisplayRequestDuration();
 });
 
 app.UseSerilogRequestLogging();
